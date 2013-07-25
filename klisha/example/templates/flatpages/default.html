@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block head.title %}{{ flatpage.title }}{% endblock %}
+{% block head.description %}{{ flatpage.content|truncatewords_html:"20" }}{% endblock %}
+
+{% block body.content %}
+    <div class="row">
+        <div class="span12">
+        {% if flatpage %}
+            <h1>{{ flatpage.title }}</h1>
+            {{ flatpage.content|safe }}
+            <br/><br/>
+        {% endif %}
+        </div>
+    </div>
+{% endblock %}
