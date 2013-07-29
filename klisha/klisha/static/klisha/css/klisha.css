@@ -100,6 +100,13 @@ a:hover {
     margin-bottom: 0;
 }
 
+.navigation.pagination {
+    float: right;
+    font-weight: bold;
+    margin-right: 5px;
+    margin-top: 15px;
+}
+
 /***********************************************************
  * Bootstrap custom styles
  */
@@ -284,6 +291,12 @@ a:hover {
 
     .no-bottom-margin {
         margin-bottom: 10px;
+    }
+    .navigation.pagination {
+        clear: both;
+        font-weight: bold;
+        margin-right: 5px;
+        margin-top: 15px;
     }
 }
 

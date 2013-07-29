@@ -19,19 +19,19 @@
             {% endthumbnail %}
         {% endif %}
     </div>
-    <div class="span12">
-
+    <div class="span8">
         <div class="picture-title">
-          {{ object.title }}
+            {{ object.title }}
         </div>
-
+    </div>
+    <div class="span12">
         {% if object.description %}
             {{ object.description|safe }}
+            <br/>
         {% endif %}
-        <br/><br/>
+        <br/>
     </div>
-
-    <div class="span12">
+    <div class="span8">
         <div class="picture-publication-info">
             {% trans "Publication date:" %}
             <a href="{% url "picture-list-year-month" object.year object.month %}">{{ object.published_at }}</a>
@@ -47,6 +47,17 @@
           {% endif %}
         </div>
     </div>
+    <div class="span4">
+        <div class="navigation pagination">
+            {% if object.previous %}
+                <a href="{% url 'picture-detail' object.previous.slug %}" class="prev">&lsaquo;&lsaquo; {% trans "previous" %}</a>
+            {% endif %}
+            {% if object.next %}
+                <a href="{% url 'picture-detail' object.next.slug %}" class="next">{% trans "next" %} &rsaquo;&rsaquo;</a>
+            {% endif %}
+        </div>
+    </div>
+
 </div>
 
 <div class="row">

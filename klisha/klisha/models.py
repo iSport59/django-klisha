@@ -7,6 +7,7 @@
 import datetime
 from django.db import models
 from django.utils.translation import ugettext as _
+from django.core.exceptions import ObjectDoesNotExist
 from .managers import PublishedPictureManager
 
 
@@ -90,20 +91,15 @@ class Picture(models.Model):
         return self.published_at.strftime("%d")
 
     def next(self):
-        """ Returns next picrure """
-        picturesNext = Picture.objects.order_by("published_at").filter(published_at__gt=self.published_at)
-
-        if len(picturesNext) > 0:
-            return picturesNext[0]
-        else:
+        try:
+            return self.get_next_by_published_at()
+        except ObjectDoesNotExist:
             return None
 
     def previous(self):
-        """ Returns previous picture """
-        picturesPrevious = Picture.objects.order_by("-published_at").filter(published_at__lt=self.published_at)
-        if len(picturesPrevious) > 0:
-            return picturesPrevious[0]
-        else:
+        try:
+            return self.get_previous_by_published_at()
+        except ObjectDoesNotExist:
             return None
 
     @models.permalink
