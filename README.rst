@@ -1,9 +1,9 @@
+
 ===============================
 klisha - Django-based photoblog
 ===============================
 
-klisha is a standards-compliant photoblog web application, written in Python 
-and uses the Django web framework.
+klisha is a standards-compliant photoblog web application, written in Python and uses the Django web framework.
 
 
 Installation
@@ -53,15 +53,17 @@ Release notes
 
 Version 1.1.0 (unreleased):
 
-* in progess
+* Updating Description, Screenshots and Installation paragraphs in README.rst file (`issue #2 <https://github.com/zenzire/django-klisha/issues/2/>`_) - in progress 
 
 Version 1.0.1 (2013-Aug-05):
   
-* #9 Change upload_to path for pictures from 'pictures' to 'klisha/pictures'
-* #4 Add next and previous picture navigation to picture detail page
-* #3 Add KLISHA_WEBSITE_DESCRIPTION parameter enhancement
-* #2 Update README.rst file (installation manual, demo version, etc) - in progress
+* Changed upload_to path ffrom 'pictures' to 'klisha/pictures' in Picture model (`issue #9 <https://github.com/zenzire/django-klisha/issues/9/>`_)
+* Added links to the next and the previous picture on picture detail page (`issue #4 <https://github.com/zenzire/django-klisha/issues/4/>`_)
+* Added KLISHA_WEBSITE_DESCRIPTION optional parameter to settings (`issue #3 <https://github.com/zenzire/django-klisha/issues/3/>`_)
+* Added Installation and Release notes paragraphs in README.rst file (`issue #2 <https://github.com/zenzire/django-klisha/issues/2/>`_) - in progress 
  
 Version 1.0.0 (2013-Jul-25):
 
 * Initial version
+
+
