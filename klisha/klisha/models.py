@@ -58,7 +58,7 @@ class Picture(models.Model):
     title = models.CharField(_("Title"), max_length=50)
     slug = models.SlugField(unique=True)
     description = models.TextField(_("Description"), blank=True, null=True)
-    picture = models.ImageField(upload_to='pictures')
+    picture = models.ImageField(upload_to='klisha/pictures')
     views_counter = models.PositiveIntegerField(_("Views counter"), default=1, editable=False)
 
     tags = models.ManyToManyField(Tag)
