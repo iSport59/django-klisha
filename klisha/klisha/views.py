@@ -19,10 +19,9 @@ class PictureDetailView(DetailView):
     Display picture detail, increase view counter and return random pictures
     """
     template_name = "klisha/picture_detail.html"
-    queryset = Picture.published_objects.all()
 
-    def get_slug_filed(self):
-        return "slug"
+    def get_queryset(self):
+        return Picture.published_objects.all()
 
     def get_context_data(self, **kwargs):
         self.object.views_counter += 1
@@ -53,7 +52,9 @@ picture_list = PictureListView.as_view()
 
 class TagDetailView(DetailView):
     template_name = "klisha/tag_detail.html"
-    queryset = Tag.objects.all()
+
+    def get_queryset(self):
+        return Tag.objects.all()
 
 tag_detail = TagDetailView.as_view()
 
@@ -67,7 +68,9 @@ tag_list = TagListView.as_view()
 
 class CategoryDetailView(DetailView):
     template_name = "klisha/category_detail.html"
-    queryset = Category.objects.all()
+
+    def get_queryset(self):
+        return Category.objects.all()
 
 category_detail = CategoryDetailView.as_view()
 
