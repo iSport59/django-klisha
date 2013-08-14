@@ -14,7 +14,6 @@ Installation
 ============
 
 Create a virtualenv
--------------------
 
 ::
 
@@ -23,26 +22,23 @@ Create a virtualenv
     ~$ source ./bin/activate
 
 Clone the code
---------------
 
 ::
 
     ~$ git clone https://github.com/zenzire/django-klisha.git
 
 Install required pip packages
------------------------------
 
 ::
     
-    (django-klisha):~$ cd django-klisha/klisha
+    (django-klisha):~$ cd django-klisha
     (django-klisha):~/django-klisha$ pip install -r requirements.txt
 
 Launch the server
------------------
 
 ::
 
-    (django-klisha):~/django-klisha$ python manage.py runserver 0.0.0.0:8080
+    (django-klisha):~/django-klisha$ ./manage.py runserver
 
 
 
@@ -55,9 +51,9 @@ klisha-powered sites
 Release notes
 =============
 
-Version development (unreleased):
+Version 1.0.3 (2013-Aug-14):
 ---------------------------------
-
+* Created pip package
 
 Version 1.0.2 (2013-Aug-14):
 ----------------------------
