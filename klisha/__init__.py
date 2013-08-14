@@ -5,6 +5,6 @@
 #
 
 __version__ = "1.0.2"
-__authors__ = [
-    "Marcin Mierzejewski - zenzire.com"
-]
+__author__ = 'Marcin Mierzejewski'
+__email__ = 'info@zenzire.com'
+__url__ = 'https://github.com/zenzire/django-klisha'
