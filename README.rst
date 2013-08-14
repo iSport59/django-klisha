@@ -55,10 +55,14 @@ klisha-powered sites
 Release notes
 -------------
 
-Version 1.1.0 (unreleased):
+Version development (unreleased):
+
+
+Version 1.0.2 (2013-Aug-14):
 
 * Admin: Added vertical display of the tags' filter interface
-* Updating Description, Screenshots and Installation paragraphs in README.rst file (`issue #2 <https://github.com/zenzire/django-klisha/issues/2/>`_) - in progress 
+* Updated Django from 1.5.1 to 1.5.2
+* Updating Description, Screenshots and Installation paragraphs in README.rst file (`issue #2 <https://github.com/zenzire/django-klisha/issues/2/>`_)
 
 Version 1.0.1 (2013-Aug-05):
   

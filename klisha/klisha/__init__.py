@@ -4,7 +4,7 @@
 # Author Marcin Mierzejewski
 #
 
-__version__ = "1.1.0dev"
+__version__ = "1.0.2"
 __authors__ = [
     "Marcin Mierzejewski - zenzire.com"
 ]
