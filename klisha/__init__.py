@@ -4,7 +4,7 @@
 # Author Marcin Mierzejewski
 #
 
-__version__ = "1.0.2"
+__version__ = "1.0.3"
 __author__ = 'Marcin Mierzejewski'
 __email__ = 'info@zenzire.com'
 __url__ = 'https://github.com/zenzire/django-klisha'
