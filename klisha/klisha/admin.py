@@ -14,6 +14,7 @@ from .models import Picture, Category, Tag
 class PictureAdmin(AdminImageMixin, admin.ModelAdmin):
     prepopulated_fields = {'slug': ('title',)}
     list_display = ('published_at', 'admin_picture', 'description', 'is_published', 'category', 'admin_tags', 'views_counter', )   
+    filter_horizontal = ("tags",)
     save_on_top = True
    
     def admin_tags(self, object):
