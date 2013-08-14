@@ -3,7 +3,11 @@
 klisha - Django-based photoblog
 ===============================
 
-klisha is a standards-compliant photoblog web application, written in Python and uses the Django web framework.
+klisha is a standards-compliant and responsive photoblog web application, 
+written in Python and uses the Django web framework.
+
+.. figure:: https://raw.github.com/zenzire/django-klisha/master/docs/images/responsive.png
+   :alt: Responsive design
 
 
 Installation
