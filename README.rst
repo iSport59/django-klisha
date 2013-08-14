@@ -53,6 +53,7 @@ Release notes
 
 Version 1.1.0 (unreleased):
 
+* Admin: Added vertical display of the tags' filter interface
 * Updating Description, Screenshots and Installation paragraphs in README.rst file (`issue #2 <https://github.com/zenzire/django-klisha/issues/2/>`_) - in progress 
 
 Version 1.0.1 (2013-Aug-05):
