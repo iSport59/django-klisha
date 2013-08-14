@@ -47,31 +47,34 @@ Launch the server
 
 
 klisha-powered sites
---------------------
+====================
 
 * http://www.mierzejewski.net - Captured Moments
 
 
 Release notes
--------------
+=============
 
 Version development (unreleased):
+---------------------------------
 
 
 Version 1.0.2 (2013-Aug-14):
+----------------------------
 
 * Admin: Added vertical display of the tags' filter interface
 * Updated Django from 1.5.1 to 1.5.2
-* Updating Description, Screenshots and Installation paragraphs in README.rst file (`issue #2 <https://github.com/zenzire/django-klisha/issues/2/>`_)
+* Updating Description, Screenshots and Installation paragraphs in README.rst file
 
 Version 1.0.1 (2013-Aug-05):
+----------------------------
   
-* Changed upload_to path ffrom 'pictures' to 'klisha/pictures' in Picture model (`issue #9 <https://github.com/zenzire/django-klisha/issues/9/>`_)
-* Added links to the next and the previous picture on picture detail page (`issue #4 <https://github.com/zenzire/django-klisha/issues/4/>`_)
-* Added KLISHA_WEBSITE_DESCRIPTION optional parameter to settings (`issue #3 <https://github.com/zenzire/django-klisha/issues/3/>`_)
-* Added Installation and Release notes paragraphs in README.rst file (`issue #2 <https://github.com/zenzire/django-klisha/issues/2/>`_) - in progress 
+* Added links to the next and the previous picture on picture detail page
+* Added KLISHA_WEBSITE_DESCRIPTION optional parameter to settings
+* Added Installation and Release notes paragraphs in README.rst file
  
 Version 1.0.0 (2013-Jul-25):
+----------------------------
 
 * Initial version
 
