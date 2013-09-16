@@ -1,4 +1,3 @@
-
 ===============================
 klisha - Django-based photoblog
 ===============================
@@ -50,6 +49,10 @@ klisha-powered sites
 
 Release notes
 =============
+
+Version 1.0.4 (2013-Sep-16):
+---------------------------------
+* Updated Django to 1.5.4 (security fix)
 
 Version 1.0.3 (2013-Aug-14):
 ---------------------------------
